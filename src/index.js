@@ -424,19 +424,7 @@ Return ONLY valid JSON, no additional text.`;
 			}
 		}
 
-		// Handle unknown routes
-		return new Response(
-			JSON.stringify({
-				error: 'Not Found',
-				message: 'Available endpoints: POST /ingest, GET /search, GET /all',
-			}),
-			{
-				status: 404,
-				headers: {
-					'Content-Type': 'application/json',
-					'Access-Control-Allow-Origin': '*',
-				},
-			}
-		);
+		// Handle unknown routes (SPA Fallback)
+		return env.ASSETS.fetch(request);
 	},
 };

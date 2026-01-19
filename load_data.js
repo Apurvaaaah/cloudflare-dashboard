@@ -9,7 +9,7 @@ const __dirname = dirname(__filename);
 const rawDataPath = join(__dirname, 'raw_data.json');
 const rawData = JSON.parse(readFileSync(rawDataPath, 'utf-8'));
 
-const INGEST_URL = 'http://localhost:8787/ingest';
+const INGEST_URL = 'http://localhost:8788/ingest';
 const DELAY_MS = 2000;
 
 async function delay(ms) {

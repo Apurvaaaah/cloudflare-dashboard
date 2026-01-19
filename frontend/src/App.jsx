@@ -4,6 +4,7 @@ import {
   Filter, X, Calendar, AlertCircle, CheckCircle2, Clock,
   TrendingUp, TrendingDown, Copy, Bell, RotateCcw
 } from 'lucide-react';
+import cfLogo from './assets/cf-logo-v2.png';
 import {
   BarChart, Bar, LineChart, Line, PieChart, Pie, Cell,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
@@ -344,7 +345,7 @@ function App() {
       <nav className="top-nav">
         <div className="nav-content">
           <div className="nav-logo">
-            <img src="/src/assets/cf-logo-v2.png" alt="Cloudflare" className="nav-logo-img" style={{ height: '40px' }} />
+            <img src={cfLogo} alt="Cloudflare" className="nav-logo-img" style={{ height: '40px' }} />
             <span className="logo-text">Cloudflare Voice</span>
           </div>
           <div className="nav-right">
